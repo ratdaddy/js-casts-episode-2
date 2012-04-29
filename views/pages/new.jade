@@ -1,0 +1,15 @@
+h1= title
+
+form(action = '/pages', method = 'post')
+  p
+    label(for = 'page[name]') Name: <br/>
+    input(type = 'text', name = 'page[name]')
+
+  p
+    label(for = 'page[body]') Body: <br/>
+    textarea(name = 'page[body]')
+
+  p
+    input(type = 'submit', value = 'Create')
+
+a(href = '/pages') Back

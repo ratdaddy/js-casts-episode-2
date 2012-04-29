@@ -1,0 +1,15 @@
+h1= title
+table
+  each name in names
+    tr
+      td
+        a(href = '/pages/#{name}')= name
+      td
+        a(href = '/pages/#{name}/edit') Edit
+      td
+        form(action = '/pages/' + name, method = 'post')
+          input(type = 'hidden', name = '_method', value = 'delete')
+          input(type = 'submit', value = 'Destroy')
+
+p
+  a(href = '/pages/new') New Page

@@ -1,0 +1,15 @@
+h1= title
+
+form(action = '/pages/' + page.name, method = 'post')
+  input(type='hidden', name = '_method', value = 'put')
+
+  p
+    label(for = 'page[body]') Body: <br/>
+    textarea(name = 'page[body]')= page.body
+
+  p
+    input(type = 'submit', value = 'Update')
+
+a(href = '/pages/' + page.name) Show
+&nbsp;|
+a(href = '/pages') Back

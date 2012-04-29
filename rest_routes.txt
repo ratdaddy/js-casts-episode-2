@@ -1,0 +1,7 @@
+1. index		GET			/pages
+2. show			GET			/page/:name
+3. new			GET			/pages/new
+4. create		POST		/pages
+5. edit			GET			/pages/:name/edit
+6. update		PUT			/pages/:name
+7. destroy	DELETE	/pages/:name
